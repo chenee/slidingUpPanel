@@ -3,12 +3,14 @@ package com.sothree.slidinguppanel.demo;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v13.app.FragmentStatePagerAdapter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout.PanelSlideListener;
 import com.sothree.slidinguppanel.demo.VerticalViewPager.OnPageChangeListener;
@@ -71,7 +73,7 @@ public class Fragment_Demo extends Fragment {
         });
 
     }
-    private class DynamicPagerAdapter extends FragmentPagerAdapter {
+    private class DynamicPagerAdapter extends FragmentStatePagerAdapter {
 		public DynamicPagerAdapter(FragmentManager fm) {
 			super(fm);
 		}
